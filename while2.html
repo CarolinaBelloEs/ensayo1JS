@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      let suma,resta,multi,divi,num1,num2,opcion;
+      opcion = parseInt(prompt("Ingrese un número diferente a 0 para ingresar"));
+      while(opcion != 0){
+
+        opcion = parseInt(prompt("Digite una opción:\n1: Suma\n2: Resta\n3: Multiplicación\n4: División\n0: Salir"));
+        switch(opcion){
+          case 0:
+            alert("Goodbye");
+            break;
+          case 1:
+            num1 = parseInt(prompt("Escriba un número para sumar"));
+            num2 = parseInt(prompt("Escriba el segundo número para sumar"));
+            suma = num1+num2;
+            alert("El resultado de la suma es: "+suma);
+            break;
+
+          case 2:
+            num1 = parseInt(prompt("Escriba un número para restar"));
+            num2 = parseInt(prompt("Escriba el segundo número para restar"));
+            resta = num1-num2;
+            alert("El resultado de la resta es: "+resta);
+            break;
+
+          case 3:
+            num1 = parseInt(prompt("Escriba un número para multiplicar"));
+            num2 = parseInt(prompt("Escriba un segundo número para multiplicar"));
+            multi = num1 * num2;
+            alert("El resultado de la multiplicación es: "+multi);
+            break;
+
+          case 4:
+            num1 = parseFloat(prompt("Escriba un número para dividir"));
+            num2 = parseFloat(prompt("Escriba un segundo número para dividir"));
+            divi = num1 / num2;
+            alert("El resultado de la división es: "+divi);
+            break;
+
+            default:
+            alert("Ingresó una opción inválida");
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
